@@ -2,6 +2,7 @@
 using DotNet6_Value_Reference_Types_Exercise_01;
 using System.Text;
 
+// TODO: Declare and initialize 3 value type variables of types: double, int, and string
 double myDouble = .005;
 int myInteger = 10;
 string myString = "Hello World";
