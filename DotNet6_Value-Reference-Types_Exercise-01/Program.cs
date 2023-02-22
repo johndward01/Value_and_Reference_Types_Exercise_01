@@ -2,6 +2,7 @@
 using DotNet6_Value_Reference_Types_Exercise_01;
 using System.Text;
 
+// TODO: Declare and initialize 3 value type variables of types: double, int, and string
 double myDouble = .005;
 int myInteger = 10;
 string myString = "Hello World";
@@ -10,9 +11,15 @@ Console.WriteLine("-------------VALUE TYPES-----------------");
 
 // TODO: Write out each of these to the Conosle like so:
 // Console.WriteLine($"Before: {yourVarible}");
+Console.WriteLine($"Before: {myDouble}");
+Console.WriteLine($"Before: {myInteger}");
+Console.WriteLine($"Before: {myString}");
 
 // TODO: Use the ChangeValueType() function to "change the value type" for each variable
 // Methods.ChangeValueType(yourVariable);
+Methods.ChangeValueType(myDouble);
+Methods.ChangeValueType(myInteger);
+Methods.ChangeValueType(myString);
 
 Methods.AddSpaces(1);
 
@@ -26,6 +33,9 @@ Methods.AddSpaces(1);
 
 // TODO: Write out the original variable to the console after being changed by the ChangeValueType() function
 // Console.WriteLine($"Original: {yourVariable}");
+Console.WriteLine($"After: {myDouble}");
+Console.WriteLine($"After: {myInteger}");
+Console.WriteLine($"After: {myString}");
 
 
 Methods.AddSpaces(1);
@@ -40,16 +50,39 @@ Dog myDogObject = new Dog { Name = "Lassy" };
 Console.WriteLine("-------------REFERENCE TYPES-----------------");
 
 // TODO: Write out each of these to the Conosle. Remember to use a loop for the list and array
+Console.Write($"Before: {sb}");
 
 Methods.AddSpaces(1);
 
-Methods.AddSpaces(1);
+Console.Write($"Before: ");
+
+foreach (var num in myList)
+{
+    Console.Write(num);
+}
 
 Methods.AddSpaces(1);
+
+Console.Write($"Before: ");
+
+foreach (var num in myArray)
+{
+    Console.Write(num);
+}
+
+Methods.AddSpaces(1);
+
+Console.Write($"Before: ");
+
+Console.WriteLine(myDogObject.Name);
 
 Methods.AddSpaces(1);
 
 // TODO: Use the ChangeReferenceType() function to "change the reference type" for each variable
+Methods.ChangeReferenceType(sb);
+Methods.ChangeReferenceType(myList);
+Methods.ChangeReferenceType(myArray);
+Methods.ChangeReferenceType(myDogObject);
 
 // Thought Experiment: What will the value of the original variable be after going through the ChangeReferenceType() method?
 // TODO: StringBuilder variable value = The ending string's value.
@@ -62,12 +95,27 @@ Methods.AddSpaces(1);
 
 
 // TODO: Write out the original variables to the console after being changed by the ChangeReferenceType() function
+Console.Write($"After: {sb}");
 
 Methods.AddSpaces(1);
 
-Methods.AddSpaces(1);
+Console.Write($"After: ");
+foreach (var num in myList)
+{
+    Console.Write(num);
+}
 
 Methods.AddSpaces(1);
+
+Console.Write($"After: ");
+foreach (var num in myArray)
+{
+    Console.Write(num);
+}
+
+Methods.AddSpaces(1);
+
+Console.WriteLine($"After: {myDogObject.Name}");
 
 
 
