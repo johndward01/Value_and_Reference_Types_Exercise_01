@@ -47,7 +47,7 @@ internal class Methods
 
     public static void ChangeReferenceType(Dog dog)
     {
-        dog.name = "A changed name";
+        dog.Name = "A changed name";
     }
 
 
