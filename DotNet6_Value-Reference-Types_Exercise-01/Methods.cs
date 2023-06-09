@@ -56,7 +56,7 @@ internal class Methods
         while (numberOfSpaces > 0)
         {
             Console.WriteLine();
-            numberOfSpaces++;
+            numberOfSpaces--;
         }
     }
 }
